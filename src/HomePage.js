@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div className="container">
       <div className="logo">
-        <img src="static/bob.png" alt="HR Mini App Logo" className="logo-img" />
+        <img src="/bob.png" alt="HR Mini App Logo" className="logo-img" />
         <h1 className="app-title">HR Mini App</h1>
         <p className="app-subtitle">Find a Job</p>
       </div>
