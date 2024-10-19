@@ -7,9 +7,10 @@ const JobSeekerRegistration = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [avatar, setAvatar] = useState(null);
+    const [avatar, setAvatar] = useState(null); // Add this line
     const [avatarPreview, setAvatarPreview] = useState('');
     const navigate = useNavigate();
+
     const handleSubmit = async(event) => {
         event.preventDefault();
         console.log("handleSubmit called");
@@ -46,7 +47,7 @@ const JobSeekerRegistration = () => {
             const reader = new FileReader();
             reader.onload = (e) => {
                 setAvatarPreview(e.target.result);
-                setAvatar(file);
+                setAvatar(file); // Use setAvatar here
             };
             reader.readAsDataURL(file);
         }
