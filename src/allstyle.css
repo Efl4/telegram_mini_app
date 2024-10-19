@@ -1,0 +1,52 @@
+/* Общие стили для страниц регистрации */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стиль для авы */
+.avatar-preview {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f4;
+}
+.job-list-page,
+.profile-page {
+  display: none; /* Скрываем по умолчанию */
+}
+
+.job-list-page.active,
+.profile-page.active {
+  display: block; /* Показываем активную страницу */
+}
